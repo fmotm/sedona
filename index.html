@@ -15,23 +15,47 @@
             </ul>
         </nav>
     </header>
-    <main class="content">
+    <main class="sitecontent">
         <div class="conteiner">
             <form action="">
-                <div class="column">
-                    <h2>Инфраструктура:</h2>
-                    <div class="item">
-                        <input type="checkbox">
-                        <label for="">Бассейн</label>
+                <div class="filter">
+                    <h3>Инфраструктура:</h3>
+                    <div class="ch-group">
+                        <input type="checkbox" name="pool" id="ch1" checked>
+                        <label for="ch1">Бассейн</label>
                     </div>
-                    <div class="item">
-                        <input type="checkbox">
-                        <label for="">Парковка</label>
+                    <div class="ch-group">
+                        <input type="checkbox" name="park" id="ch2">
+                        <label for="ch2">Парковка</label>
                     </div>
-                    <div class="item">
-                        <input type="checkbox">
-                        <label for="">Wi-Fi</label>
+                    <div class="ch-group">
+                        <input type="checkbox" name="wifi" id="ch3">
+                        <label for="ch3">Wi-Fi</label>
                     </div>
+                </div>
+                <div class="filter">
+                    <h3>Тип жилья:</h3>
+                    <div class="ch-group">
+                        <input type="checkbox" name="hotel" id="ch4">       
+                        <label for="ch4">Гостиница</label>
+                    </div>    
+                    <div class="ch-group">
+                        <input type="checkbox" name="motel" id="ch5">
+                        <label for="ch5">Мотель</label>
+                    </div>
+                    <div class="ch-group">
+                        <input type="checkbox" name="appartment" id="ch6">
+                        <label for="ch6">Аппартаменты</label>
+                    </div>    
+                </div>
+                <div class="filter">
+                    <h3>Стоимость в сутки(р):</h3>
+                    <div class="costselect">
+                        <div class="range">от<input type="text"></div>
+                        <div class="range">до<input type="text"></div>
+                        <input type="range" min="0" max="3000" id="cost"  value="3">
+                    </div>
+                        
                 </div>
 
 
